@@ -1,0 +1,7 @@
+disablesitemap = true
+disablerss = true
+
+baseurl = "http://jorin-vogel.github.io/hugo-shortcodes"
+
+layoutdir = "./"
+staticdir = "public"

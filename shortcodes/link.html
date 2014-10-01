@@ -1,0 +1,23 @@
+{{/*
+
+	Create permalink relative to your baseurl
+	
+	
+	Uses unnamed parameters. First parameter is the link text.
+	Second parameter is the relative URL.
+	Make sure to skip the leading `/`.
+
+	Examples:
+
+	- Link to root page:
+
+		{{% link Home "" %}}	
+
+
+	- Link to a post:
+
+		{{% link "See more here" "posts/some-title" %}}
+
+
+*/}}
+<a href="{{ .Page.Site.BaseUrl }}/{{ .Get 1 }}"/>{{ .Get 0 }}</a>

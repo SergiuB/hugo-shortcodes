@@ -1,0 +1,4 @@
+<img
+    src="{{ .Page.Site.BaseUrl }}/img/{{ .Get 0 }}"
+    alt="{{ if isset .Params 1 }}{{ .Get 1 }}{{ end }}"
+/>
