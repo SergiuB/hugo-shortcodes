@@ -1,4 +1,8 @@
 +++
 title = "link"
 +++
-{{% img src.jpg  %}}
+
+
+{{% link Home  %}}
+
+{{% link "Some Page" pages/name %}}

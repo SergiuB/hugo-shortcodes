@@ -1,4 +1,21 @@
+{{/*
+
+    Create image with source relative to your baseurl
+    Useful for images in you static folder.
+
+
+    Uses unnamed parameters.
+    First parameter is the source url.
+    Make sure to skip the leading `/`.
+    Second parameter alt text. It's optional.
+
+    Example:
+
+        {{% img "images/picture.jpg" "This is a picture" %}}
+
+
+*/}}
 <img
-    src="{{ .Page.Site.BaseUrl }}/img/{{ .Get 0 }}"
+    src="{{ .Page.Site.BaseUrl }}/{{ .Get 0 }}"
     alt="{{ if isset .Params 1 }}{{ .Get 1 }}{{ end }}"
 />
