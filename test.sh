@@ -7,7 +7,7 @@ result="public/index.html"
 function runDiff {
     cmp $result $spec
     r=$?
-    if [ $r > 0 ]; then
+    if [ $r != 0 ]; then
         echo ""
         diff -c $result $spec
     fi
